@@ -1,0 +1,203 @@
+@define-color background #12161e;
+@define-color foreground #d8cab8;
+@define-color cursor #8cb1fc;
+@define-color selection_bg #d8cab8;
+@define-color selection_fg #141216;
+
+@define-color color0 #212935;
+@define-color color8 #92fcfa;
+@define-color color1 #fc4b4b;
+@define-color color9 #fc4b4b;
+@define-color color2 #91e881;
+@define-color color10 #91e881;
+@define-color color3 #9cb1fc;
+@define-color color11 #9cb1fc;
+@define-color color4 #7b91fc;
+@define-color color12 #7b91fc;
+@define-color color5 #f3fc7b;
+@define-color color13 #f3fc7b;
+@define-color color6 #5581e0;
+@define-color color14 #5581e0;
+@define-color color7 #fc92fc;
+@define-color color15 #9297fc;
+
+* {
+  border: none;
+  border-radius: 12px;
+  min-height: 0;
+  font-family: "SST", "Noto Sans", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0px;
+  background: transparent;
+}
+
+window#waybar {
+  background-image: linear-gradient(to bottom, 
+    rgba(18, 22, 30, 0.9) 0%, 
+    rgba(33, 41, 53, 0.8) 50%, 
+    rgba(33, 41, 53, 0.9) 100%);
+  border-radius: 16px;
+  border: 1px solid @color3;
+  padding: 0px;
+}
+
+tooltip {
+  background: @color0;
+  color: @foreground;
+  border-radius: 8px;
+  border: 1px solid @color3;
+}
+
+tooltip label {
+  color: @foreground;
+}
+
+#custom-applauncher {
+  font-size: 24px;
+  margin-left: 8px;
+  color: @color3;
+}
+
+#taskbar {
+  margin: 4px 8px;
+  color: @foreground;
+}
+
+#taskbar button {
+  margin: 0 4px;
+  padding: 2px 4px;
+  border-radius: 6px;
+  border: 1px solid @color3;
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+  background: @color0;
+  color: @foreground;
+}
+
+#taskbar button:hover {
+  background: @color4;
+  box-shadow: 0px 0px 6px @color4;
+}
+
+#taskbar button.active {
+  background: linear-gradient(to bottom, @color3, @color4);
+  color: @background;
+}
+
+#battery,
+#network,
+#clock,
+#tray,
+#workspaces,
+#pulseaudio,
+#custom-applauncher,
+#hyprland-language,
+#language,
+#custom-power {
+  background: linear-gradient(to bottom, 
+    rgba(33, 41, 53, 0.8), 
+    rgba(18, 22, 30, 0.9));
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+  margin: 4px;
+  padding: 6px 12px;
+  border-radius: 10px;
+  color: @color3;
+  border: 1px solid @color3;
+}
+
+#tray menu {
+  background: @color0;
+  color: @foreground;
+  padding: 4px;
+  border-radius: 8px;
+  border: 1px solid @color3;
+}
+
+#tray menu menuitem {
+  background: @color0;
+  margin: 3px;
+  color: @foreground;
+  border-radius: 6px;
+  border: 1px solid @color3;
+}
+
+#tray menu menuitem:hover {
+  background: @color4;
+  color: @background;
+  box-shadow: 0px 0px 4px @color4;
+}
+
+#workspaces button {
+  transition-duration: 100ms;
+  all: initial;
+  min-width: 0;
+  color: @color3;
+  margin: 0 4px;
+}
+
+#workspaces button.active {
+  color: @color3;
+  text-shadow: 0px 0px 6px @color3;
+}
+
+#workspaces button:hover {
+  transition-duration: 120ms;
+  color: @color4;
+  text-shadow: 0px 0px 8px @color4;
+}
+
+#workspaces button.current_output {
+  color: @color3;
+}
+
+#workspaces button.urgent {
+  color: @color1;
+  text-shadow: 0px 0px 6px @color1;
+}
+
+#battery.warning {
+  color: @color5;
+}
+
+#battery.critical,
+#battery.urgent {
+  color: @color1;
+  text-shadow: 0px 0px 6px @color1;
+}
+
+#pulseaudio {
+  font-size: 16px;
+  color: @color3;
+}
+
+#battery {
+  font-size: 14px;
+  color: @color3;
+}
+
+#network {
+  color: @color3;
+}
+
+#clock {
+  color: @color3;
+}
+
+#tray {
+  color: @color3;
+}
+
+#hyprland-language {
+  font-size: 14px;
+  color: @color3;
+}
+
+#language {
+  font-size: 14px;
+  color: @color3;
+}
+
+#custom-power {
+  font-size: 20px;
+  color: @color3;
+}

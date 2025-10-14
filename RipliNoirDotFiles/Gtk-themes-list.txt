@@ -1,0 +1,3 @@
+Theme: WhiteSur-Dark
+Icons: Papirus-Dark
+Cursor: Oxygen Blue
