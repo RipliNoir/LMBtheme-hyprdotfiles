@@ -1,0 +1,3 @@
+Find windows fonts with paru/yay
+Consolas <- terminal
+SST-cufonfonts <- other
